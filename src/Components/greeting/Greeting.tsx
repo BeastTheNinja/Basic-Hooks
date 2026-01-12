@@ -6,10 +6,10 @@ export const Greeting = () => {
     return (
         <section
             className="
-            min-h-screen 
             flex 
             items-center 
             justify-center
+            py-5
             bg-gray-100">
             <div
                 className="
