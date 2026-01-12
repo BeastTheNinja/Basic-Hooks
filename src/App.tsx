@@ -1,6 +1,6 @@
 import { Counter } from "./Components/counter/Counter";
 import { Greeting } from "./Components/greeting/Greeting";
-import { WrapperContainerModal } from "./Components/wrapper/WrapperModalContainer";
+import {WrapperModalContainer } from "./Components/wrapper/WrapperModalContainer";
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
             <Counter />
 
             <Greeting />
-            <WrapperContainerModal/>
+            <WrapperModalContainer/>
         </>
     )
 }
