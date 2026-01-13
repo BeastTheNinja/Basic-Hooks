@@ -1,17 +1,23 @@
+import { useState } from "react";
 import { Counter } from "./Components/counter/Counter";
 import { Greeting } from "./Components/greeting/Greeting";
-import {WrapperModalContainer } from "./Components/wrapper/WrapperModalContainer";
+import { Modal } from "./Components/modal/Modal";
+import { Button } from "./Components/button/Button";
 
 function App() {
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
 
         <>
             <Counter />
-
             <Greeting />
-            <WrapperModalContainer/>
+            <Button setIsModalOpen={setIsModalOpen} />
+            <Modal  setIsModalOpen={setIsModalOpen} isOpen={isModalOpen} />
+                
+              
+            
         </>
     )
 }
